@@ -106,7 +106,7 @@ color: #2E2F42;
 }
 .hero-title {
     color: #FFF;
-    width: 496px;
+    max-width: 496px;
         text-align: center;
         font-size: 56px;
         font-weight: 700;
@@ -131,7 +131,9 @@ color: #2E2F42;
             display: block;
             margin-left: auto;
             margin-right: auto;
-
+            min-width: 169px;
+            height: 56px;
+            border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -191,9 +193,6 @@ color: #2E2F42;
 .team {
     background: #F4F4FD;
 }
-.team-photo{
-    margin-bottom: 32px;
-}
 .team-title {
     color: #2E2F42;
         text-align: center;
@@ -221,10 +220,11 @@ color: #2E2F42;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-        letter-spacing: 0.02em;
-        padding-bottom: 32px;
+        letter-spacing: 0.02em; 
 }
-
+.team-description{
+    padding: 32px 0;
+}
 /*--------------PORTFOLIO----------*/
 
 .portfolio-list{
@@ -256,9 +256,7 @@ color: #2E2F42;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        margin-bottom: 16px;
-        padding: 0 16px;
-        padding-top: 32px;
+        margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -267,12 +265,11 @@ color: #2E2F42;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        padding-bottom: 32px;
-        padding: 0 16px;
 }
-.team-border{
+.portfolio-border{
     border: 1px solid #E7E9FC;
     border-top: none;
+    padding: 32px 16px;
 }
 .portfolio-points {
     background-color: #FFFFFF;
@@ -289,8 +286,6 @@ color: #2E2F42;
         line-height: 1.5;
         letter-spacing: 0.02em;
         width: 264px;
-        margin-top: 17.5px;
-        padding-bottom: 100px;
 }
 .footer-logo{
     color:#4d5ae5;
@@ -300,10 +295,12 @@ color: #2E2F42;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 .footer-logo-span{
     color: #f4f4fd;
 }
 .footer{
-    padding-top: 101.5px;
+    padding: 100px 0;
 }
